@@ -8,24 +8,13 @@ import Form from "./components/Form";
 
 const RootStack = createStackNavigator();
 const MainStack = createStackNavigator();
-// const MainStackScreen = () => {
-//   return (
-//     <MainStack.Navigator>
-//       <MainStack.Screen name="Home" component={Home} />
-//       <MainStack.Screen
-//         name="WeatherReport"
-//         component={WeatherReport}
-//         options={({ route }) => ({ title: route.params.paletteName })}
-//       />
-//     </MainStack.Navigator>
-//   );
-// }
+
 export default function App() {
   return (
     <NavigationContainer>
       <RootStack.Navigator mode="modal">
         <RootStack.Screen
-          name="main"
+          name="Know Weather Of Your City"
           component={Home}
           options={{ headerShown: true }}
         />
